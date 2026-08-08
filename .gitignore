@@ -1,0 +1,41 @@
+# --- Export output (may contain your real thread contents — never commit) ---
+assistants-export/
+export/
+*.export/
+threads/
+manifest.json
+assistants.json
+
+# --- Thread ID lists (often pulled from production logs) ---
+my_threads.txt
+thread_ids*.txt
+
+# --- Secrets ---
+.env
+.env.*
+*.key
+*.pem
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# --- Internal (not part of the public repo) ---
+PUBLISH.md
