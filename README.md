@@ -140,13 +140,23 @@ Stated precisely, because "it works" is not a claim you should take on faith fro
 python3 test_export_fixtures.py
 ```
 
+## Free guides in this repository
+
+Three pages, no signup, written from the same research as the paid kit. They cover the parts that are not the export:
+
+- **[What to do before August 26, 2026](docs/what-to-do-before-august-26-2026.md)**: the short version if you are reading this with days left. In particular, the two steps that become impossible after the date, and the reason the export goes before the port.
+- **[The silent failures when porting Assistants to the Responses API](docs/silent-failures-porting-assistants-to-responses-api.md)**: six ways the port produces no error and wrong behaviour. `file_search` retrieving nothing, `additional_instructions` discarding your system prompt, the truncation default that inverted, token fields going null while the bill still looks right, and two bugs in the published backfill sample.
+- **[Model shutdowns after August 26, 2026](docs/model-shutdowns-after-august-26-2026.md)**: porting onto your currently pinned model can buy you a second outage on **October 23**, 58 days later. Plus the November 30 prompt-objects date and the December snapshot retirements.
+
+---
+
 ## Contributing / issues
 
 Bug reports are welcome and useful, especially anything from a **live run export**, an **Azure `api-version` mismatch**, or an unusual object shape the script mishandles. See [CONTRIBUTING.md](CONTRIBUTING.md). Please redact IDs and content before pasting.
 
 ---
 
-## Need the port done, not just the export?
+## Want the port done for you?
 
 
 This exporter is the free half, and it is deliberately complete on its own. If you can do the migration yourself, take it and go. That is what it is for.
