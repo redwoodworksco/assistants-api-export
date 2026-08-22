@@ -142,11 +142,12 @@ python3 test_export_fixtures.py
 
 ## Free guides in this repository
 
-Three pages, no signup, written from the same research as the paid kit. They cover the parts that are not the export:
+Four pages, no signup, written from the same research as the paid kit. They cover the parts that are not the export:
 
 - **[What to do before August 26, 2026](docs/what-to-do-before-august-26-2026.md)**: the short version if you are reading this with days left. In particular, the two steps that become impossible after the date, and the reason the export goes before the port.
 - **[The silent failures when porting Assistants to the Responses API](docs/silent-failures-porting-assistants-to-responses-api.md)**: six ways the port produces no error and wrong behaviour. `file_search` retrieving nothing, `additional_instructions` discarding your system prompt, the truncation default that inverted, token fields going null while the bill still looks right, and two bugs in the published backfill sample.
 - **[Model shutdowns after August 26, 2026](docs/model-shutdowns-after-august-26-2026.md)**: porting onto your currently pinned model can buy you a second outage on **October 23**, 58 days later. Plus the November 30 prompt-objects date and the December snapshot retirements.
+- **[`openai.NotFoundError` / HTTP 404 after August 26, 2026](docs/openai-notfounderror-404-threads-after-august-26.md)**: for the reader whose deployment has already broken. What the removal actually looks like at the HTTP and SDK layer, why the SDK gave no warning (the methods are still in the package), and what is and is not recoverable once the endpoints are gone.
 
 ---
 
